@@ -510,6 +510,23 @@ html{
 .plan-con .plan_upper_box {
     margin-bottom: 70px;
 }
+
+.feature-box .primary_btn {
+	margin-top:20px;
+    padding: 15px 40px;
+    color: var(--e-global-color-white);
+    background-color: var(--e-global-color-secondary);
+    border: 1px solid var(--e-global-color-secondary);
+}
+
+.feature-box .primary_btn:hover {
+	
+	color: var(--e-global-color-secondary);
+    background-color: transparent;
+    
+    border: 1px solid var(--e-global-color-secondary);
+}
+
 .plan-con .plan-box {
     padding: 40px 35px 45px;
     background-color: transparent;
@@ -4984,4 +5001,457 @@ to {
 .sign-up-form .login-card .select-option:focus {
     outline: none;
     box-shadow: none;
+}
+
+/* =========================================
+   CLIENT PHOTO CAROUSEL
+========================================= */
+
+.client-logo-section {
+    width: 100%;
+    padding: 60px 0;
+    background: #ffffff;
+}
+
+.client-logo-carousel {
+    width: 100%;
+    position: relative;
+}
+
+
+/* =========================================
+   PHOTO ITEM
+========================================= */
+
+.client-logo-carousel .item {
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* =========================================
+   PHOTO BOX
+========================================= */
+
+.client-logo-carousel .item a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* =========================================
+   PHOTO
+========================================= */
+
+.client-logo-carousel .item img {
+    display: block;
+
+    width: 300px;
+    max-width: 100%;
+
+    height: 310px;
+
+    margin: 0 auto;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    transition: all 0.3s ease;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   PHOTO HOVER
+========================================= */
+
+.client-logo-carousel .item a:hover img {
+    transform: scale(1.03);
+}
+
+
+/* =========================================
+   OWL NAVIGATION
+========================================= */
+
+.client-logo-carousel .owl-nav {
+    width: 100%;
+    margin-top: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+/* Previous / Next buttons */
+
+.client-logo-carousel .owl-nav button {
+    width: 45px !important;
+    height: 45px !important;
+
+    margin: 0 !important;
+
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #dddddd !important;
+    border-radius: 50% !important;
+
+    background: #ffffff !important;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Arrow */
+
+.client-logo-carousel .owl-nav button span {
+    font-size: 28px;
+    line-height: 1;
+
+    color: #333333;
+}
+
+
+/* Hover */
+
+.client-logo-carousel .owl-nav button:hover {
+    background: #333333 !important;
+    border-color: #333333 !important;
+}
+
+.client-logo-carousel .owl-nav button:hover span {
+    color: #ffffff;
+}
+
+
+/* =========================================
+   OWL DOTS
+========================================= */
+
+.client-logo-carousel .owl-dots {
+    margin-top: 15px;
+
+    text-align: center;
+}
+
+.client-logo-carousel .owl-dots .owl-dot {
+    outline: none;
+}
+
+.client-logo-carousel .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+
+    margin: 5px;
+
+    display: block;
+
+    border-radius: 50%;
+
+    background: #dddddd;
+
+    transition: all 0.3s ease;
+}
+
+.client-logo-carousel .owl-dots .owl-dot.active span {
+    background: #333333;
+}
+
+
+/* =========================================
+   IMAGE POPUP
+========================================= */
+
+.client-image-popup {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 99999;
+}
+
+
+/* Dark background */
+
+.client-popup-overlay {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.85);
+}
+
+
+/* Popup box */
+
+.client-popup-content {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: auto;
+    max-width: 90%;
+    max-height: 90%;
+
+    padding: 20px;
+
+    background: #ffffff;
+
+    border-radius: 10px;
+
+    box-sizing: border-box;
+}
+
+
+/* Popup image */
+
+.client-popup-content img {
+    display: block;
+
+    width: auto;
+
+    max-width: 85vw;
+
+    height: auto;
+
+    max-height: 80vh;
+
+    object-fit: contain;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   POPUP CLOSE BUTTON
+========================================= */
+
+.client-popup-close {
+    position: absolute;
+
+    top: -18px;
+    right: -18px;
+
+    width: 42px;
+    height: 42px;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    color: #222222;
+
+    font-size: 30px;
+
+    line-height: 42px;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    z-index: 10;
+
+    transition: all 0.3s ease;
+}
+
+.client-popup-close:hover {
+    background: #222222;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1199px) {
+
+    .client-logo-carousel .item img {
+        width: 280px;
+        height: 210px;
+    }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+    .client-logo-section {
+        padding: 50px 0;
+    }
+
+    .client-logo-carousel .item {
+        padding: 8px;
+    }
+
+    .client-logo-carousel .item img {
+        width: 260px;
+        height: 200px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+    .client-logo-section {
+        padding: 40px 0;
+    }
+
+    .client-logo-carousel .item {
+        padding: 5px;
+    }
+
+    .client-logo-carousel .item img {
+        width: 100%;
+        max-width: 300px;
+        height: 190px;
+    }
+
+    .client-logo-carousel .owl-nav {
+        margin-top: 20px;
+    }
+
+    .client-logo-carousel .owl-nav button {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .client-logo-carousel .owl-nav button span {
+        font-size: 24px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .client-logo-section {
+        padding: 30px 0;
+    }
+
+    .client-logo-carousel .item img {
+        width: 100%;
+        height: 170px;
+    }
+
+    .client-popup-content {
+        max-width: 92%;
+        padding: 10px;
+    }
+
+    .client-popup-content img {
+        max-width: 85vw;
+        max-height: 75vh;
+    }
+
+    .client-popup-close {
+        top: -12px;
+        right: -12px;
+
+        width: 36px;
+        height: 36px;
+
+        font-size: 25px;
+        line-height: 36px;
+    }
+
+}
+
+
+/* =========================================
+   DESKTOP DROPDOWN - OPEN ON HOVER
+========================================= */
+
+@media (min-width: 992px) {
+
+    .navbar-nav .dropdown {
+        position: relative;
+    }
+
+    .navbar-nav .dropdown .dropdown-menu {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        margin-top: 0;
+
+        transition: all 0.2s ease;
+    }
+
+    .navbar-nav .dropdown:hover .dropdown-menu {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE DROPDOWN
+========================================= */
+
+@media (max-width: 991px) {
+
+    .navbar-nav .dropdown .dropdown-menu {
+        display: none;
+        opacity: 1;
+        visibility: visible;
+
+        position: static;
+
+        width: 100%;
+
+        margin: 0;
+        padding: 0;
+
+        border: 0;
+        box-shadow: none;
+    }
+
+    .navbar-nav .dropdown.show .dropdown-menu {
+        display: block;
+    }
+
 }
